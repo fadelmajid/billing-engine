@@ -11,19 +11,6 @@ This project implements a billing system for a loan engine. The billing engine p
 
 ## Project Structure
 
-billing-engine/
-├── cmd/
-│ └── billing-engine/
-│   └─ main.go
-├── pkg/
-│ └── billing/
-│ ├── loan.go
-│ └── billing_test.go
-├── go.mod
-├── go.sum
-└── README.md
-
-
 - **cmd/**: Contains the entry point of the application.
 - **pkg/**: Contains the core packages of the application. The `billing` package encapsulates all billing logic, including loan and payment-related operations.
 - **go.mod**: Defines the module and its dependencies.
@@ -68,6 +55,7 @@ Processes a payment for the loan. Returns a message indicating whether the payme
 
 
 ## Example
+```
 package main
 
 import (
@@ -81,3 +69,4 @@ func main() {
     fmt.Println(loan.GetOutstanding())    // 5390000
     fmt.Println(loan.IsDelinquent())      // False
 }
+```
