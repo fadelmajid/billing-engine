@@ -14,7 +14,6 @@ This project implements a billing system for a loan engine. The billing engine p
 - **cmd/**: Contains the entry point of the application.
 - **pkg/**: Contains the core packages of the application. The `billing` package encapsulates all billing logic, including loan and payment-related operations.
 - **go.mod**: Defines the module and its dependencies.
-- **go.sum**: Contains checksums of the dependencies to ensure consistency.
 
 ## Getting Started
 
@@ -25,9 +24,7 @@ This project implements a billing system for a loan engine. The billing engine p
 ### Installation
 
 1. Clone the repository:
-   sh
    git clone https://github.com/fadelmajid/billing-engine.git
-   cd billing-engine
 2. Initialize the module:
    go mod tidy
 
